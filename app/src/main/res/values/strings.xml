@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">RickAndMortyApp</string>
+    <string name="error_load">Não foi possivel carregar as informações!</string>
+    <string name="some_characters">Some characters</string>
+    <string name="character_name">Character Name</string>
+    <string name="character_specie">Character Specie</string>
+    <string name="character_gender">Character Gender</string>
+    <string name="character_status">Character Status</string>
+    <string name="character_origin">Character Origin</string>
+    <string name="episodes">Episodes</string>
+    <string name="status">Status</string>
+    <string name="some_episodes">Some episodes</string>
+    <string name="episode_name">Episode Name</string>
+    <string name="episode_airdate">Episode AirDate</string>
+    <string name="episode_episode">Episode Episode</string>
+    <string name="characters">Characters</string>
+    <string name="name">Name</string>
+    <string name="airdate">AirDate</string>
+    <string name="some_locations">Some locations</string>
+    <string name="location_name">Location Name</string>
+    <string name="location_type">Location Type</string>
+    <string name="location_dimension">Location Dimension</string>
+    <string name="residents">Residents</string>
+    <string name="type">Type</string>
+    <string name="main">Female</string>
+    <string name="male">Male</string>
+    <string name="genderless">Genderless</string>
+    <string name="unknown">unknown</string>
+    <string name="character_gender_item">Gender: </string>
+    <string name="character_origin_item">Origin: </string>
+    <string name="character_specie_item">Specie: </string>
+    <string name="character_status_item">Status: </string>
+    <string name="episode_episode_item">Episode: </string>
+    <string name="episode_airdate_item">Air Date: </string>
+    <string name="location_dimensions_item">Dimensions: </string>
+    <string name="location_type_item">Type: </string>
+</resources>

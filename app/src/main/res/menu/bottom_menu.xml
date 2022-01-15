@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/character_page"
+        android:icon="@drawable/ic_baseline_account_circle"
+        android:title="Characters" />
+
+    <item
+        android:id="@+id/location_page"
+        android:icon="@drawable/ic_baseline_location_on"
+        android:title="Locations" />
+
+    <item
+        android:id="@+id/episode_page"
+        android:icon="@drawable/ic_baseline_local_movies"
+        android:title="Episodes" />
+</menu>

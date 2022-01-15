@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_dark_blue">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_default" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:cardElevation="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewStatus"
+        app:srcCompat="@drawable/placeholder">
+
+        <ImageView
+            android:id="@+id/imageViewCharacterItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/placeholder" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textViewCharacterItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="@string/character_name"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewStatus"
+        app:layout_constraintStart_toEndOf="@+id/imageViewStatus"
+        app:layout_constraintTop_toTopOf="@+id/imageViewStatus" />
+
+    <TextView
+        android:id="@+id/textViewCharacterItemSpecie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/nunito"
+        android:text="@string/character_specie"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/textViewCharacterItemStatus"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCharacterItemStatus" />
+
+    <TextView
+        android:id="@+id/textViewCharacterItemGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/nunito"
+        android:text="@string/character_gender"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/textViewCharacterItemSpecie"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCharacterItemSpecie" />
+
+    <TextView
+        android:id="@+id/textViewCharacterItemStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="@string/character_status"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/cardViewImage"
+        app:layout_constraintTop_toTopOf="@+id/cardViewImage" />
+
+    <TextView
+        android:id="@+id/textViewCharacterItemOrigin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/nunito"
+        android:maxEms="8"
+        android:maxLines="2"
+        android:text="@string/character_origin"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/textViewCharacterItemGender"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCharacterItemGender" />
+
+    <TextView
+        android:id="@+id/textViewEpisodes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunito_light"
+        android:text="@string/episodes"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/cardViewImage"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewImage" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewEpisodeItem"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEpisodes"
+        tools:listitem="@layout/episode_item_list"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarEpisodeItem"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewEpisodes"
+        app:layout_constraintStart_toEndOf="@+id/textViewEpisodes"
+        app:layout_constraintTop_toTopOf="@+id/textViewEpisodes" />
+
+    <ImageView
+        android:id="@+id/imageViewStatus"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/cardViewImage"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/ic_baseline_circle_unknown" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
